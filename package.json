@@ -11,7 +11,14 @@
     "type": "git",
     "url": "git+https://github.com/creativechain/trantor-lib-nodejs.git"
   },
-  "author": "",
+  "authors": {
+    "nombrekeff": {
+      "name": "Manolo Edge"
+    },
+    "nOsDelAbismo": {
+      "name": "Vicent Nos Ripolles"
+    }
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/creativechain/trantor-lib-nodejs/issues"

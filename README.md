@@ -39,4 +39,4 @@ You can download the binaries for your platform from [here](https://binaries.cre
       * `trantor.pushTx(rawtx, cb)`: pushes rawtx to creativechain blockchain
 
 ###### Authors
-Copyright 2017 Vicent Nos Ripolles, Manolo Edge
+Vicent Nos Ripolles, Manolo Edge

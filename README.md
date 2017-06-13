@@ -10,6 +10,7 @@ npm install https://github.com/EntropyFactory/creativechain-media.git
 You need to have creativechain core running to use this library.
 You can download the binaries for your platform from [here](https://binaries.creativechain.net/)
 
+
 ##### Usage
 ###### command-line
   * `node ./lib/trantor-lib.js <command> [args]`
@@ -36,3 +37,6 @@ You can download the binaries for your platform from [here](https://binaries.cre
       * `trantor.findOp(find, cb)`: not tested
       * `trantor.spend(addr, redeem, amount, sendto, cback)`: not tested
       * `trantor.pushTx(rawtx, cb)`: pushes rawtx to creativechain blockchain
+
+###### Authors
+Copyright 2017 Vicent Nos Ripolles, Manolo Edge

@@ -11,6 +11,13 @@ npm install https://github.com/EntropyFactory/creativechain-media.git
 You need to have creativechain core running to use this library.
 You can download the binaries for your platform from [here](https://binaries.creativechain.net/)
 
+You need to create a creativecoin.conf in creativecoins core datadir, and add:
+```
+rpcuser=creativecoin
+rpc_password=creativecoin
+```
+Then run the core with the datadir specified.
+
 
 ##### Usage
 ###### command-line

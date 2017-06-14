@@ -17,11 +17,12 @@ You can download the binaries for your platform from [here](https://binaries.cre
 
   * Commands
     * `explore`: explore creativechain blockchain and indexes transactions and content.
-    * `getdatafromref <txid>`: returns data from transaction
+    * `getData <txid>`: returns data from transaction
     * `listunspent <address>`: returns list of unspent transactions
-    * `newWIF`: creates a new address with private key
+    * `newWallet`: creates a new address with private key
     * `getWallets`: return all wallets saved
-
+    * `sendTx <target_address> <amount> <fee>`: creates and sends a transaction
+    * `saveData <amount> <fee> '<json_string>'`: saves json data in blockchain
 
 
 ###### from node
@@ -30,10 +31,10 @@ You can download the binaries for your platform from [here](https://binaries.cre
     const trantor = require('./lib/trantor-lib.js');
   ```
   * Methods
-      * `trantor.newWIF()`: creates a new address with private key
+      * `trantor.newWallet()`: creates a new address with private key
       * `trantor.getWallets()`: returns all wallets saved
       * `trantor.explore()`: explore creativechain blockchain and indexes transactions and content.
-      * `trantor.getdatafromref(txid, cback)`: returns data from transaction
+      * `trantor.getData(txid, cback)`: returns data from transaction
       * `trantor.listunspent(addr, cback)`: returns list of unspent transactions
       * `trantor.findWord(word, page, cback)`: returns list of unspent transactions
       * `trantor.smartdeal(datos)`: not tested
@@ -48,6 +49,11 @@ You can download the binaries for your platform from [here](https://binaries.cre
           * `amount` **number**: the amount to send
           * `fee` **number**: the fee of the tx
           * `cback` **function**: called when tx has been sent, and its called with the transaction id
+      * `trantor.saveData(amount, fee, data, cback)`: creates a raw transaction and sends it
+          * `amount` **number**: the amount to send
+          * `fee` **number**: the fee of the tx
+          * `data` **json string**: the data to save in blockchain
+          * `cback` **function**: called when tx has been sent, and its called with the new transaction id
 
 
 

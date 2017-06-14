@@ -14,7 +14,7 @@ You can download the binaries for your platform from [here](https://binaries.cre
 You need to create a creativecoin.conf in creativecoins core datadir, and add:
 ```
 rpcuser=creativecoin
-rpc_password=creativecoin
+rpcpassword=creativecoin
 ```
 Then run the core with the datadir specified.
 

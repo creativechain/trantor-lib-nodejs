@@ -4,8 +4,10 @@
 ##### Installation
 
 ```
-npm install git://github.com/creativechain/trantor-lib-nodejs.git
+git clone https://github.com/creativechain/trantor-lib-nodejs.git
+npm install
 ```
+
 
 ##### IMPORTANT
 You need to have creativechain core running to use this library.

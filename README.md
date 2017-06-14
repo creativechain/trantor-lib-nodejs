@@ -42,18 +42,18 @@ Then run the core with the datadir specified.
     const trantor = require('./lib/trantor-lib.js');
   ```
   * Methods
-      * `trantor.newWallet()`: creates a new address with private key
-      * `trantor.getWallets()`: returns all wallets saved
-      * `trantor.explore()`: explore creativechain blockchain and indexes transactions and content.
+      * `trantor.newWallet()` #works: creates a new address with private key
+      * `trantor.getWallets()` #works: returns all wallets saved
+      * `trantor.explore()` #works: explore creativechain blockchain and indexes transactions and content.
           -  Quite slow
-      * `trantor.listUnspent(addr, cback)`: returns list of unspent transactions
-      * `trantor.findWord(word, page, cback)`: returns list of unspent transactions
+      * `trantor.listUnspent(addr, cback)` #works: returns list of unspent transactions
+      * `trantor.findWord(word, page, cback)`: returns references for transactions containing a word
       * `trantor.smartdeal(datos)`: not tested
       * `trantor.creadeal(data, datos, cback)`: not tested
       * `trantor.findaddr(addr)`: finds entries for address in db
       * `trantor.getcontracts(type, ref, cback)`: gets contracts for type and reference
       <!-- * `trantor.findOp(find, cback)`: not tested -->
-      * `trantor.pushTx(rawtx, cback)`: pushes rawtx to creativechain blockchain
+      * `trantor.pushTx(rawtx, cback)` #works: pushes rawtx to creativechain blockchain
       * `trantor.send(addr, amount, fee, cback)`: creates a raw transaction and sends it
           * `addr` **string**: the address to send to
           * `amount` **number**: the amount to send
@@ -64,7 +64,7 @@ Then run the core with the datadir specified.
           * `fee` **number**: the fee of the tx
           * `data` **json string**: the data to save in blockchain
           * `cback` **function**: called when tx has been sent, and its called with the new transaction id
-      * `trantor.getData(txid, cback)`: returns data from transaction
+      * `trantor.getData(txid, cback)` #works: returns data from transaction
 
 
 

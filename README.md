@@ -18,7 +18,7 @@ You can download the binaries for your platform from [here](https://binaries.cre
   * Commands
     * `explore`: explore creativechain blockchain and indexes transactions and content.
     * `getData <txid>`: returns data from transaction
-    * `listunspent <address>`: returns list of unspent transactions
+    * `listUnspent <address>`: returns list of unspent transactions
     * `newWallet`: creates a new address with private key
     * `getWallets`: return all wallets saved
     * `sendTx <target_address> <amount> <fee>`: creates and sends a transaction
@@ -34,8 +34,7 @@ You can download the binaries for your platform from [here](https://binaries.cre
       * `trantor.newWallet()`: creates a new address with private key
       * `trantor.getWallets()`: returns all wallets saved
       * `trantor.explore()`: explore creativechain blockchain and indexes transactions and content.
-      * `trantor.getData(txid, cback)`: returns data from transaction
-      * `trantor.listunspent(addr, cback)`: returns list of unspent transactions
+      * `trantor.listUnspent(addr, cback)`: returns list of unspent transactions
       * `trantor.findWord(word, page, cback)`: returns list of unspent transactions
       * `trantor.smartdeal(datos)`: not tested
       * `trantor.creadeal(data, datos, cback)`: not tested
@@ -54,6 +53,7 @@ You can download the binaries for your platform from [here](https://binaries.cre
           * `fee` **number**: the fee of the tx
           * `data` **json string**: the data to save in blockchain
           * `cback` **function**: called when tx has been sent, and its called with the new transaction id
+      * `trantor.getData(txid, cback)`: returns data from transaction
 
 
 

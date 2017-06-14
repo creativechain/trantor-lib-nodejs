@@ -50,10 +50,11 @@ Then run the core with the datadir specified.
       * `trantor.findWord(word, page, cback)`: returns references for transactions containing a word
       * `trantor.smartdeal(datos)`: not tested
       * `trantor.creadeal(data, datos, cback)`: not tested
-      * `trantor.findaddr(addr)`: finds entries for address in db
+      * `trantor.findaddr(addr)`: #not tested -  finds entries for address in db
       * `trantor.getcontracts(type, ref, cback)`: gets contracts for type and reference
       <!-- * `trantor.findOp(find, cback)`: not tested -->
       * `trantor.pushTx(rawtx, cback)` #works: pushes rawtx to creativechain blockchain
+      * `trantor.decodeRawTransaction(rawtx, cback)`: returns decoded transaction from raw transaction
       * `trantor.send(addr, amount, fee, cback)`: creates a raw transaction and sends it
           * `addr` **string**: the address to send to
           * `amount` **number**: the amount to send

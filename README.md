@@ -30,7 +30,7 @@ Then run the core with the datadir specified.
     * `listUnspent <address>`: returns list of unspent transactions
     * `newWallet`: creates a new address with private key
     * `getWallets`: return all wallets saved
-    * `sendTx <target_address> <amount> <fee>`: creates and sends a transaction
+    * `send <target_address> <amount> <fee>`: creates and sends amount to target_address
     * `saveData <amount> <fee> '<json_string>'`: saves json data in blockchain
 
 

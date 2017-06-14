@@ -17,7 +17,7 @@ You can download the binaries for your platform from [here](https://binaries.cre
 
   * Commands
     * `explore`: explore creativechain blockchain and indexes transactions and content.
-       - Quite slow, help apreciated
+       - Quite slow
     * `getData <txid>`: returns data from transaction
     * `listUnspent <address>`: returns list of unspent transactions
     * `newWallet`: creates a new address with private key
@@ -35,7 +35,7 @@ You can download the binaries for your platform from [here](https://binaries.cre
       * `trantor.newWallet()`: creates a new address with private key
       * `trantor.getWallets()`: returns all wallets saved
       * `trantor.explore()`: explore creativechain blockchain and indexes transactions and content.
-          -  Quite slow, help apreciated
+          -  Quite slow
       * `trantor.listUnspent(addr, cback)`: returns list of unspent transactions
       * `trantor.findWord(word, page, cback)`: returns list of unspent transactions
       * `trantor.smartdeal(datos)`: not tested

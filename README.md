@@ -4,7 +4,7 @@
 ##### Installation
 
 ```
-npm install https://github.com/EntropyFactory/creativechain-media.git
+npm install git://github.com/creativechain/trantor-lib-nodejs.git
 ```
 
 ##### IMPORTANT

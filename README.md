@@ -35,7 +35,7 @@ Then run the core with the datadir specified.
     * `explore`: explore creativechain blockchain and indexes transactions and content.
        - Quite slow
     * `getData <txid>` #works: returns data from transaction
-    * `listUnspent <address>`: returns list of unspent transactions for specified address
+    * `listUnspent <address>` #works: returns list of unspent transactions for specified address
     * `newWallet` #works: creates a new address with private key
     * `getWallets` #works: return all wallets saved
     * `send <target_address> <amount> <fee>`: creates and sends amount to target_address

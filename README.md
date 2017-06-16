@@ -37,7 +37,9 @@ Then run the core with the datadir specified.
     * `getData <txid>` #works: returns data from transaction
     * `listUnspent <address>`: returns list of unspent transactions
     * `newWallet` #works: creates a new address with private key
+      * **returns** { wif: "wif", address: "address" }
     * `getWallets` #works: return all wallets saved
+      * **returns** [ { wif: "wif", address: "address" }, ... ]
     * `send <target_address> <amount> <fee>`: creates and sends amount to target_address
     * `saveData <amount> <fee> '<json_string>'`: saves json data in blockchain
 
@@ -49,7 +51,9 @@ Then run the core with the datadir specified.
   ```
   * Methods
       * `trantor.newWallet()` #works: creates a new address with private key
+        * **returns**  { wif: "wif", address: "address" }
       * `trantor.getWallets()` #works: returns all wallets saved
+        * **returns**  [ { wif: "wif", address: "address" }, ... ]
       * `trantor.explore()` #works: explore creativechain blockchain and indexes transactions and content.
           -  Quite slow
       * `trantor.listUnspent(addr, cback)` #works: returns list of unspent transactions

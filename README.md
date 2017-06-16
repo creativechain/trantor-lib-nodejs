@@ -5,6 +5,7 @@
 
 ```
 git clone https://github.com/creativechain/trantor-lib-nodejs.git
+cd trantor-lib-nodejs
 npm install
 ```
 
@@ -39,7 +40,7 @@ Then run the core with the datadir specified.
 ###### from node
   * Require **trantor** into your project.
   ```js
-    const trantor = require('./lib/trantor-lib.js');
+    const trantor = require('./trantor-lib-nodejs/lib/trantor-lib');
   ```
   * Methods
       * `trantor.newWallet()` #works: creates a new address with private key

@@ -52,10 +52,11 @@ Then run the core with the datadir specified.
   * Methods
       * `trantor.newWallet()` #works: creates a new address with private key
         * **returns**  { wif: "wif", address: "address" }
-      * `trantor.getWallets()` #works: returns all wallets saved
-        * **returns**  [ { wif: "wif", address: "address" }, ... ]
-      * `trantor.explore()` #works: explore creativechain blockchain and indexes transactions and content.
-          -  Quite slow
+      * `trantor.getWallets(cback)` #works: returns all wallets saved
+        * **cback(addresses)**  addresses = [ { wif: "wif", address: "address" }, ... ]
+      * `trantor.explore(cback)` #works: explore creativechain blockchain and indexes transactions and content.
+        * **cback()** will be called when explore finishes
+        -  Quite slow
       * `trantor.listUnspent(addr, cback)` #works: returns list of unspent transactions
       * `trantor.findWord(word, page, cback)`: returns references for transactions containing a word
       * `trantor.smartdeal(datos)`: not tested

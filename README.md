@@ -9,6 +9,11 @@ cd trantor-lib-nodejs
 npm install
 ```
 
+##### Linux Users
+Maybe `npm install` will fail installing **sqlite3**,
+if so check [this issue](https://github.com/mapbox/node-sqlite3/issues/612) to see if it fixes your error
+
+
 
 ##### IMPORTANT
 You need to have creativechain core running to use this library.

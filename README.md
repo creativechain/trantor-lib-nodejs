@@ -48,8 +48,8 @@ Then run the core with the datadir specified.
     const trantor = require('./trantor-lib-nodejs/lib/trantor-lib');
   ```
   * Methods
-      * `trantor.newWallet()` #works: creates a new address with private key
-        * **returns**  { wif: "wif", address: "address" }
+      * `trantor.newWallet(cback)` #works: creates a new address with private key
+        * **cback(newAdress)** newAdress = { wif: "wif", address: "address" }
       * `trantor.getWallets(cback)` #works: returns all wallets saved
         * **cback(addresses)**  addresses = [ { wif: "wif", address: "address" }, ... ]
       * `trantor.explore(cback)` #works: explore creativechain blockchain and indexes transactions and content.

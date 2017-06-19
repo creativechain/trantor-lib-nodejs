@@ -49,7 +49,7 @@ Then run the core with the datadir specified.
   ```
   * Methods
       * `trantor.newWallet(cback)` #works: creates a new address with private key
-        * **cback(newAdress)** newAdress = { wif: "wif", address: "address" }
+        * **cback(newWallet)** newWallet = { wif: "wif", address: "address" }
       * `trantor.getWallets(cback)` #works: returns all wallets saved
         * **cback(addresses)**  addresses = [ { wif: "wif", address: "address" }, ... ]
       * `trantor.explore(cback)` #works: explore creativechain blockchain and indexes transactions and content.

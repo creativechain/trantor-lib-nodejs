@@ -64,6 +64,7 @@ Then run the core with the datadir specified.
       <!-- * `trantor.findOp(find, cback)`: not tested -->
       * `trantor.pushTx(rawtx, cback)` #works: pushes rawtx to creativechain blockchain
       * `trantor.decodeRawTransaction(rawtx, cback)`: returns decoded transaction from raw transaction
+      * `trantor.getDecodedTransaction(txid, cback)`: returns return transaction information
       * `trantor.send(addr, amount, fee, cback)`: creates a raw transaction and sends it
           * `addr` **string**: the address to send to
           * `amount` **number**: the amount to send

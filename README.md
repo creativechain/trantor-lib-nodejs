@@ -71,12 +71,12 @@ Then run the core with the datadir specified.
           * `amount` **number**: the amount to send
           * `fee` **number**: the fee of the tx
           * `cback` **function**: called when tx has been sent, and its called with the transaction id
-      * `trantor.saveData(amount, fee, data, cback)`: creates a raw transaction and sends it
+      * `trantor.saveData(amount, fee, data, cback)`: saves json data in blockchain
           * `amount` **number**: the amount to send
           * `fee` **number**: the fee of the tx
           * `data` **json string**: the data to save in blockchain
           * `cback` **function**: called when tx has been sent, and its called with the new transaction id
-      * `trantor.getData(txid, cback)` #works: returns data from transaction
+          * `trantor.getData(txid, cback)` #works: returns data from transaction - Data saved from **saveData**
 
 
 

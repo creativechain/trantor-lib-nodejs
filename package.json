@@ -28,6 +28,7 @@
     "bitcoin": "^3.0.1",
     "bitcoinjs-lib": "^3.0.3",
     "lodash": "^4.17.4",
-    "sqlite3": "^3.1.8"
+    "sqlite3": "^3.1.8",
+    "webtorrent": "^0.98.18"
   }
 }

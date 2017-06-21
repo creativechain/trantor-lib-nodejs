@@ -44,7 +44,8 @@ Then run the core with the datadir specified.
     * `getWallets` #works: return all wallets saved
     * `send <target_address> <amount> <fee>`: creates and sends amount to target_address
     * `saveData <amount> <fee> '<json_string>'`: saves json data in blockchain
-
+    * `seedFile <filepath>`: starts seeding torrent
+    * `getTorrent <magnet_uri> <save_path>`: downloads a torrent from magnet_uri and saves it to save_path
 
 ###### from node
   * Require **trantor** into your project.

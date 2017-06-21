@@ -23,6 +23,9 @@ You need to create a creativecoin.conf in creativecoins core datadir, and add:
 ```
 rpcuser=creativecoin
 rpcpassword=creativecoin
+
+txindex=1
+reindex-chainstate=1
 ```
 Then run the core with the datadir specified.
 
@@ -77,8 +80,39 @@ Then run the core with the datadir specified.
           * `data` **json string**: the data to save in blockchain
           * `cback` **function**: called when tx has been sent, and its called with the new transaction id
           * `trantor.getData(txid, cback)` #works: returns data from transaction - Data saved from **saveData**
-
-
+      * `trantor.seedFile(filepath, cback)`: starts seeding file, and calls cback with a [Torrent Object](https://github.com/webtorrent/webtorrent/blob/master/docs/api.md#torrentinfohash)
+        * Then you can save the magnetURI to the blockchain
+        * ie:
+        ```js
+          const trantor = require('./trantor-lib-nodejs/lib/trantor-lib');
+          trantor.seedFile('/images/test.png', function(torrent){
+            let data = {
+              title: "my cool image",
+              magnetUncompressed: torrent.magnetURI,
+              description: "Some image from google"
+            }
+            trantor.saveData(0.002, 0.002, JSON.stringify(data),
+              function (response) {
+                if (!response.error) {
+                  console.log(response.error);
+                }
+                else {
+                  console.log("transaction sent correctly: txid ["+response+"]");
+                }
+              });
+          })
+        ```
+      * `trantor.getTorrent(magnetURI, savePath, cback)`: download a torrent from magnetURI and saves it to savePath, cback is called with [Torrent Object](https://github.com/webtorrent/webtorrent/blob/master/docs/api.md#torrentinfohash)
+        * ie:
+        ```js
+          const trantor = require('./trantor-lib-nodejs/lib/trantor-lib');
+          let magnetURI = '...';
+          trantor.getTorrent(magnetURI, '/torrents', function(torrent){
+            torrent.files.forEach(function (file) {
+              console.log("File arribed", file);
+            })
+          })
+        ```
 
 ###### Authors
 Vicent Nos Ripolles, Manolo Edge
